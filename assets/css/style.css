@@ -1,0 +1,76 @@
+/* Farbe: #323A45 / #848484 */
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    width: 90%;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    padding: 5vh 5% 0 5%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7vh;
+}
+header a{
+    text-decoration: none;
+    color: #323A45;
+}
+header>a{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+header a:hover{
+    text-decoration: underline;
+}
+nav a{
+    font-size: 0.8rem;
+    margin-left: 25px;
+}
+.big-box{
+    grid-column: 1/-1;
+}
+section a div:hover{
+    opacity: 0.5;
+}
+section div{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+h1, h2{
+    font-size: 1rem;
+    color: #323A45;
+}
+h3{
+    font-size: 0.9rem;
+    color: #848484;
+    margin: 0;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14,1fr);
+    gap: 20px;
+}
+section a div{
+    height: 80vh;
+}
+.big-box a div{
+    height: 75vh;
+}
+section:nth-of-type(1) a div{
+    background: url(../img/1.png) center/cover no-repeat;
+}
+section:nth-of-type(2) a div{
+    background: url(../img/d2.png) center/cover no-repeat;
+}
+section:nth-of-type(3) a div{
+    background: url(../img/u6.png) center/cover no-repeat;
+}
+section:nth-of-type(4) a div{
+    background: url(../img/u10.png) center/cover no-repeat;
+}
