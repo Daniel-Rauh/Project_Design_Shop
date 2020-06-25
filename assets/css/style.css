@@ -26,6 +26,13 @@ header>a{
 header a:hover{
     text-decoration: underline;
 }
+.hamburger div{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 3px 0;
+    display: none;
+}
 nav a{
     font-size: 0.8rem;
     margin-left: 25px;
@@ -212,4 +219,50 @@ h5{
     position: relative;
     top: 8px;
     padding: 0 5px;
+}
+/* tablet */
+@media only screen and (min-width:321px) and (max-width:768px){
+    .big-nav{
+        display: none;
+    }
+    .hamburger div{
+        display: block;
+    }
+    footer div {
+        width: 50%;
+    }
+    footer div:nth-of-type(1){
+        width: 50%;
+    }
+}
+/* phone */
+@media only screen and (max-width:320px) {
+    html{
+        font-size: 18px;
+    }
+    header>a{
+        font-size: 1rem;
+    }
+    .big-nav{
+        display: none;
+    }
+    .hamburger div{
+        display: block;
+    }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 80vh 80vh 80vh 80vh 80vh 80vh 40vh;
+    }
+    section a div{
+        height: 60vh;
+    }
+    .big-box a div{
+        height: 20vh;
+    }
+    footer div {
+        width: 70%;
+    }
+    footer div:nth-of-type(1){
+        width: 70%;
+    }
 }
