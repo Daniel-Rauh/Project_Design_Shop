@@ -222,17 +222,36 @@ h5{
 }
 /* tablet */
 @media only screen and (min-width:321px) and (max-width:768px){
+    html{
+        font-size: 22px;
+    }
     .big-nav{
         display: none;
     }
     .hamburger div{
         display: block;
     }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 30vh 70vh 70vh 70vh 70vh 70vh 70vh 30vh;
+    }
+    section a div{
+        height: 60vh;
+    }
+    .big-box a div{
+        height: 20vh;
+    }
     footer div {
         width: 50%;
     }
     footer div:nth-of-type(1){
         width: 50%;
+    }
+    h4{
+        font-size: 0.7rem;
+    }
+    h5{
+        font-size: 0.7rem;
     }
 }
 /* phone */
