@@ -233,7 +233,7 @@ h5{
     }
     main{
         grid-template-columns: 1fr;
-        grid-template-rows: 30vh 70vh 70vh 70vh 70vh 70vh 70vh 30vh;
+        grid-template-rows: 35vh 72vh 72vh 72vh 72vh 72vh 72vh 35vh;
     }
     section a div{
         height: 60vh;
