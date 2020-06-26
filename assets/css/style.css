@@ -41,7 +41,7 @@ header a:hover{
     height: 20px;
     right: 12px;
     top: 36px;
-    z-index: 2;
+    z-index: 3;
     opacity: 0;
 }
 .hamburger div:nth-of-type(1){
