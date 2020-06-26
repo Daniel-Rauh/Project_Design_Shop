@@ -26,12 +26,77 @@ header>a{
 header a:hover{
     text-decoration: underline;
 }
+.hamburger{
+        display: none;
+        position: relative;
+}
 .hamburger div{
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+}
+.hamburger input{
+    position: fixed;
+    width: 30px;
+    height: 20px;
+    right: 12px;
+    top: 36px;
+    z-index: 2;
+    opacity: 0;
+}
+.hamburger div:nth-of-type(1){
+    top: 40px;
+    right: 15px;
     width: 30px;
     height: 4px;
     background-color: black;
-    margin: 3px 0;
+}
+.hamburger div:nth-of-type(2){
+    top: 47px;
+    right: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+}
+.hamburger div:nth-of-type(3){
+    top: 54px;
+    right: 15px;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+}
+.x{
+    color: #fff;
+    font-size: 1.5rem;
+    top: 30px;
+    right: 19px;
     display: none;
+}
+.small-menu{
+    position: fixed;
+    right: -110%;
+    top: -36px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    padding: 10vh 20px 0 0;
+    transition: right 0.8s;
+}
+.small-menu a{
+    margin-top: 20vh;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.hamburger input:checked~.small-menu{
+    right: -26px;
+}
+.hamburger input:checked~div{
+    display: none;
+}
+.hamburger input:checked~.x{
+    display: block;
 }
 nav a{
     font-size: 0.8rem;
@@ -225,10 +290,14 @@ h5{
     html{
         font-size: 22px;
     }
+    body{
+        padding: 5vh 10% 0 5%;
+        width: 85%;
+    }
     .big-nav{
         display: none;
     }
-    .hamburger div{
+    .hamburger {
         display: block;
     }
     main{
@@ -259,14 +328,43 @@ h5{
     html{
         font-size: 18px;
     }
+    body{
+        padding: 5vh 15% 0 5%;
+        width: 80%;
+    }
     header>a{
         font-size: 1rem;
     }
     .big-nav{
         display: none;
     }
-    .hamburger div{
+    .hamburger {
         display: block;
+    }
+    .hamburger input{
+        right: 10px;
+        top: 26px;
+    }
+    .hamburger div:nth-of-type(1){
+        top: 30px;
+        right: 15px;
+        width: 25px;
+        height: 3px;
+    }
+    .hamburger div:nth-of-type(2){
+        top: 37px;
+        right: 15px;
+        width: 25px;
+        height: 3px;
+    }
+    .hamburger div:nth-of-type(3){
+        top: 44px;
+        right: 15px;
+        width: 25px;
+        height: 3px;
+    }
+    .x{
+        top: 22px;
     }
     main{
         grid-template-columns: 1fr;
